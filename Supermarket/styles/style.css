@@ -1,0 +1,114 @@
+/* 
+* @file style.css
+* @author : Paolo Gippa. 
+* This CSS file gives the style for the index.html
+*/
+
+:root {
+  --first: rgb(253, 251, 251);
+  --second: rgb(26, 24, 24);
+  --third: rgb(214, 214, 30);
+  --bkg: aliceblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0 0% 0 10%;
+  background-color: var(--bkg);
+}
+
+/*
+ * styling of hero section
+ */
+
+.hero {
+  background-image: url(../img/grocery-shop-shelves.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero h1,
+h2 {
+  font-size: 5em;
+  color: var(--second);
+  opacity: 100%;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-weight: 100;
+  opacity: 100%;
+  font-size: 2.4em;
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+/*
+ * styling of buttons 
+ */
+
+.buttons {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero button {
+  border: 4px solid var(--third);
+  border-radius: 5px;
+  color: var(--second);
+  width: fit-content;
+  padding: 10px 40px;
+  background-color: var(--third);
+  margin-top: 3%;
+  font-size: 1.4em;
+  transition: 0.45s;
+}
+
+.buttons button:nth-last-child(1) {
+  width: fit-content;
+  border: 4px solid var(--third);
+  background-color: var(--first);
+  color: var(--second);
+}
+
+.hero button:hover {
+  border-radius: 50px;
+}
+
+.hero button:active {
+  background-color: var(--first);
+}
+
+/*
+ * styling of footer
+ */
+
+.hero a {
+  text-decoration: none;
+  color: var(--second);
+}
+
+.hero div:nth-last-child(1) {
+  position: absolute;
+  top: 90%;
+  width: 35%;
+}
