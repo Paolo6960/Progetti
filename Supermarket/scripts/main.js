@@ -284,7 +284,7 @@ function outputColors(msg) {
       "background-color: green; font-weight: bold;color: white"
     );
   } else if (msg.includes("valid")) {
-    console.log("%c" + msg, "background-color: aqua; font-weight: bold");
+    console.log("%c" + msg, "background-color: blue; font-weight: bold");
   } else if (msg.includes("old")) {
     console.log(
       "%c" + msg,
